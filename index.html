@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="register-form" id="registerForm">
+            <h1>Регистрация</h1>
+            <input type="text" id="username" placeholder="Имя пользователя" required>
+            <input type="password" id="password" placeholder="Пароль" required>
+            <button onclick="register()">Зарегистрироваться</button>
+        </div>
+        <div class="button-container" id="buttonContainer">
+            <button onclick="openLink('https://alikhtml.github.io/EasyMed/')">Перейти на EasyMed</button>
+            <button onclick="openLink('https://alikhtml.github.io/MedRem/')">Перейти на MedRem</button>
+            <button onclick="window.location.href='support.html'">Поддержка</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+/* Основные стили для всего документа */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для формы регистрации */
+.register-form h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.register-form input, .register-form button {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: calc(100% - 30px);
+}
+
+/* Внешний вид кнопки в форме регистрации */
+.register-form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.register-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для кнопок после регистрации */
+.button-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container button {
+    padding: 15px 25px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для формы поддержки */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+form input, form textarea, form button {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(100% - 30px);
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Внешний вид кнопки в форме поддержки */
+form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .register-form input, .register-form button,
+    .button-container button,
+    form input, form textarea, form button {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Адаптивные стили для маленьких экранов */
+@media (max-width: 480px) {
+    .register-form h1 {
+        font-size: 1.5em;
+    }
+    .button-container button {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+}
